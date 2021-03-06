@@ -19,7 +19,7 @@ USE_LDCONFIG=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-libzmq=${LOCALBASE} \
 		--with-pkgconfigdir=${LOCALBASE}/libdata/pkgconfig \
-		--without-docs
+		--without-docs --without-uuid
 
 INSTALL_TARGET=	install-strip
 TEST_TARGET=	check

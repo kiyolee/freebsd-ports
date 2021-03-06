@@ -1,0 +1,34 @@
+*** bin/portupgrade.orig	Sat Mar 10 05:59:29 2018
+--- bin/portupgrade	Wed Mar 25 22:50:40 2020
+***************
+*** 217,222 ****
+--- 217,223 ----
+    $use_packages_only = false
+    $without_env_upgrade = false
+    $yestoall = false
++   $pkgname_cache = {}
+  end
+  
+  def main(argv)
+***************
+*** 1566,1572 ****
+  
+    cmdargs.concat(get_make_args(origin))
+  
+!   output = `cd #{portdir} && #{shelljoin(*cmdargs)} -V PKGNAME -V IGNORE -V NO_IGNORE -V ECHO_MSG`.scan(/.*\n/)
+  
+    if output.size != 4
+      warning_message "Makefile possibly broken: #{origin}:"
+--- 1567,1578 ----
+  
+    cmdargs.concat(get_make_args(origin))
+  
+!   if $pkgname_cache.has_key?(portdir)
+!     output = $pkgname_cache[portdir]
+!   else
+!     output = `cd #{portdir} && #{shelljoin(*cmdargs)} -V PKGNAME -V IGNORE -V NO_IGNORE -V ECHO_MSG`.scan(/.*\n/)
+!     $pkgname_cache[portdir] = output
+!   end
+  
+    if output.size != 4
+      warning_message "Makefile possibly broken: #{origin}:"

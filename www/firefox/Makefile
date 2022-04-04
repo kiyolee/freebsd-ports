@@ -51,6 +51,9 @@ MOZ_OPTIONS=	--enable-application=browser \
 .if ${ARCH} == powerpc64
 MOZ_OPTIONS+=	--without-wasm-sandboxed-libraries
 .else
+.if !defined(LLVM_VERSION)
+LLVM_VERSION=${:!pkg info -E llvm${LLVM_DEFAULT} | ${AWK} -F- '{print \$NF}' | ${SED} -e 's/[_,].*\$//'!}
+.endif
 BUILD_DEPENDS+=	${LOCALBASE}/share/wasi-sysroot/lib/wasm32-wasi/libc++abi.a:devel/wasi-libcxx${LLVM_VERSION} \
 		${LOCALBASE}/share/wasi-sysroot/lib/wasm32-wasi/libc.a:devel/wasi-libc \
 		wasi-compiler-rt${LLVM_VERSION}>0:devel/wasi-compiler-rt${LLVM_VERSION}

@@ -1,0 +1,20 @@
+--- completions/tar.orig	2023-04-16 10:12:57.973726000 +1000
++++ completions/tar	2023-04-16 18:12:55.438928000 +1000
+@@ -422,7 +422,7 @@
+ 
+ __tar_detect_ext()
+ {
+-    local tars='@(@(tar|gem|spkg)?(.@(Z|[bgx]z|bz2|lz?(ma|o)|zst))|t@([abglx]z|b?(z)2|zst))'
++    local tars='@(@(tar|gem|spkg)?(.@(Z|[bgx]z|bz2|lz?(ma|o)|zst))|t@([abglx]z|b?(z)2|zst)|pkg)'
+     ext="$tars"
+ 
+     case "$tar_mode_arg" in
+@@ -449,7 +449,7 @@
+             ext='@(@(t?(ar.)|gem.)bz?(2)|spkg|tb2)'
+             ;;
+         *[J]*f)
+-            ext='@(@(tar|gem|spkg).@(lzma|xz)|t[lx]z)'
++            ext='@(@(tar|gem|spkg).@(lzma|xz)|t[lx]z|pkg)'
+             ;;
+     esac
+ }

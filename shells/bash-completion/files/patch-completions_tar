@@ -14,7 +14,7 @@
              ;;
          *[J]*f)
 -            ext='@(@(tar|gem|spkg).@(lzma|xz)|t[lx]z)'
-+            ext='@(@(tar|gem|spkg).@(lzma|xz)|t[lx]z|pkg)'
++            ext='@(@(tar|gem|spkg).@(lzma|xz|zst)|t[lx]z|pkg)'
              ;;
      esac
  }

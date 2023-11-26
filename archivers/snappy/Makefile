@@ -10,7 +10,7 @@ WWW=		https://google.github.io/snappy/
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		cmake compiler:c++11-lang cpe
+USES=		cmake compiler:c++14-lang cpe
 CPE_VENDOR=	google
 USE_LDCONFIG=	yes
 

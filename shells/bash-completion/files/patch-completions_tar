@@ -1,20 +1,20 @@
---- completions/tar.orig	2023-04-16 10:12:57.973726000 +1000
-+++ completions/tar	2023-04-16 18:12:55.438928000 +1000
-@@ -422,7 +422,7 @@
+--- completions/tar.orig	2024-02-21 17:21:24.000000000 +1100
++++ completions/tar	2024-03-13 23:52:21.440243000 +1100
+@@ -439,7 +439,7 @@
  
- __tar_detect_ext()
+ _comp_cmd_tar__detect_ext()
  {
--    local tars='@(@(tar|gem|spkg)?(.@(Z|[bgx]z|bz2|lz?(ma|o)|zst))|t@([abglx]z|b?(z)2|zst))'
-+    local tars='@(@(tar|gem|spkg)?(.@(Z|[bgx]z|bz2|lz?(ma|o)|zst))|t@([abglx]z|b?(z)2|zst)|pkg)'
-     ext="$tars"
- 
-     case "$tar_mode_arg" in
-@@ -449,7 +449,7 @@
-             ext='@(@(t?(ar.)|gem.)bz?(2)|spkg|tb2)'
+-    local tars='@(@(tar|spkg)?(.@(Z|[bgx]z|bz2|lz?(ma|o)|zst))|t@([abglx]z|b?(z)2|zst)|cbt|gem|xbps)'
++    local tars='@(@(tar|spkg)?(.@(Z|[bgx]z|bz2|lz?(ma|o)|zst))|t@([abglx]z|b?(z)2|zst)|cbt|gem|xbps|pkg)'
+     if [[ ${COMP_WORDS[0]} == ?(*/)bsdtar ]]; then
+         # https://github.com/libarchive/libarchive/wiki/LibarchiveFormats
+         tars=${tars/%\)/|pax|cpio|iso|zip|@(j|x)ar|mtree|a|7z|warc}
+@@ -477,7 +477,7 @@
+             ext='@(t?(ar.)bz?(2)|spkg|tb2)'
              ;;
          *[J]*f)
--            ext='@(@(tar|gem|spkg).@(lzma|xz)|t[lx]z)'
-+            ext='@(@(tar|gem|spkg).@(lzma|xz|zst)|t[lx]z|pkg)'
+-            ext='@(@(tar|spkg).@(lzma|xz)|t[lx]z)'
++            ext='@(@(tar|spkg).@(lzma|xz|zst)|t[lx]z|pkg)'
              ;;
      esac
  }

@@ -365,7 +365,7 @@
 +void vboxfs_free_vp(struct vnode *);
 +
 +int vboxfs_alloc_node(struct mount *, struct vboxfs_mnt *, const char*,
-+    enum vtype, uid_t, gid_t, mode_t, struct vboxfs_node *,
++    __enum_uint8(vtype), uid_t, gid_t, mode_t, struct vboxfs_node *,
 +    struct vboxfs_node **);
 +void vboxfs_free_node(struct vboxfs_mnt *, struct vboxfs_node *);
 +

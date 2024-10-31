@@ -1,0 +1,11 @@
+--- CMakeLists.txt.orig	2024-10-31 21:58:34.413233000 +1100
++++ CMakeLists.txt	2024-10-31 21:59:07.373166000 +1100
+@@ -306,7 +306,7 @@
+         endif()
+     endif()
+ else()
+-    separate_arguments(LLVM_LDFLAGS UNIX_COMMAND "${LLVM_LDFLAGS}")
++    separate_arguments(LLVM_LDFLAGS UNIX_COMMAND "${LLVM_LDFLAGS} -L/usr/local/lib -lzstd")
+ endif()
+ 
+ # Suppress superfluous randlib warnings about "*.a" having no symbols on MacOSX.

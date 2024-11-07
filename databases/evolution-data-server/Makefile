@@ -32,7 +32,7 @@ LIB_DEPENDS=	libsoup-3.0.so:devel/libsoup3 \
 
 PORTSCOUT=	limitw:1,even
 
-USES=		bdb:5 cmake cpe gettext gnome gperf \
+USES=		bdb:18 cmake cpe gettext gnome gperf \
 		iconv:wchar_t localbase pathfix pkgconfig python:build \
 		sqlite tar:xz xorg
 USE_CXXSTD=	gnu++17
@@ -46,8 +46,8 @@ LDFLAGS=	-L${LOCALBASE}/lib
 CMAKE_OFF=	CMAKE_CXX_EXTENSIONS
 CMAKE_ARGS=	-DENABLE_INTROSPECTION=ON \
 		-DENABLE_UOA=OFF \
-		-DWITH_LIBDB_CFLAGS=-I${LOCALBASE}/include/db5 \
-		-DWITH_LIBDB_LIBS="-L${LOCALBASE}/lib -ldb-5"
+		-DWITH_LIBDB_CFLAGS=-I${LOCALBASE}/include/db18 \
+		-DWITH_LIBDB_LIBS="-L${LOCALBASE}/lib -ldb-18"
 
 
 GLIB_SCHEMAS=	org.gnome.evolution-data-server.addressbook.gschema.xml \

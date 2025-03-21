@@ -1,5 +1,3 @@
-%%COMPAT%%bin/egrep
-%%COMPAT%%bin/fgrep
 bin/gegrep
 bin/gfgrep
 bin/ggrep

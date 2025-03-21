@@ -51,7 +51,7 @@ post-patch-NLS-off:
 		${WRKSRC}/lib/Makefile.in
 
 post-install-COMPAT-on:
-.for p in grep egrep fgrep
+.for p in grep
 	${LN} -sf g${p} ${STAGEDIR}${PREFIX}/bin/${p}
 .endfor
 

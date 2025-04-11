@@ -20,7 +20,7 @@ WWW=		https://github.com/pypa/setuptools \
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}wheel044<0.46.0:devel/py-wheel044@${PY_FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}wheel>=0:devel/py-wheel@${PY_FLAVOR}
 
 USES=		cpe python
 USE_PYTHON=	allflavors autoplist concurrent pep517 # pytest to return later

@@ -18,7 +18,7 @@ BUILD_DEPENDS=	cmake:devel/cmake-core \
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}rapidfuzz>=3.5.2:devel/py-rapidfuzz@${PY_FLAVOR}
 
 USES=		python
-USE_PYTHON=	pep517 cython autoplist pytest # tests fail to run, see https://github.com/maxbachmann/JaroWinkler/issues/7
+USE_PYTHON=	pep517 cython3 autoplist pytest # tests fail to run, see https://github.com/maxbachmann/JaroWinkler/issues/7
 
 TEST_ENV=	${MAKE_ENV} PYTHONPATH=${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}
 

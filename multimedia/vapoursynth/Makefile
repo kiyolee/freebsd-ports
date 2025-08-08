@@ -16,7 +16,7 @@ BUILD_DEPENDS_amd64=	nasm:devel/nasm
 LIB_DEPENDS=	libzimg.so:graphics/sekrit-twc-zimg
 
 USES=		autoreconf compiler:c++17-lang gmake libtool localbase pathfix python pkgconfig
-USE_PYTHON=	cython
+USE_PYTHON=	cython3
 USE_GITHUB=	yes
 USE_LDCONFIG=	yes
 

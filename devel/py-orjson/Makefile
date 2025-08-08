@@ -26,7 +26,7 @@ TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}python-dateutil>0:devel/py-python-dateutil@
 USES=		cargo python
 USE_GITHUB=	yes
 GH_ACCOUNT=	ijl
-USE_PYTHON=	autoplist concurrent cython pep517 pytest
+USE_PYTHON=	autoplist concurrent cython3 pep517 pytest
 
 CARGO_BUILD=	no
 CARGO_INSTALL=	no

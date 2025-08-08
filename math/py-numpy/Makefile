@@ -23,7 +23,7 @@ TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>=6.2.5:devel/py-pytest@${PY_FLAVOR} 
 		${PYTHON_PKGNAMEPREFIX}typing-extensions>=4.2.0:devel/py-typing-extensions@${PY_FLAVOR}
 
 USES=		compiler:c11 cpe fortran python:3.9+
-USE_PYTHON=	allflavors autoplist concurrent cython distutils
+USE_PYTHON=	allflavors autoplist concurrent cython3 distutils
 
 GCCLIBDIR_CMDS=	${FC} -print-file-name=libgfortran.so | ${SED} -e s/libgfortran.so//
 LDFLAGS+=	-s

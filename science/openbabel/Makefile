@@ -43,7 +43,7 @@ CAIRO_USE=		GNOME=cairo
 
 GUI_CMAKE_BOOL=		BUILD_GUI
 GUI_CMAKE_ON=		-DwxWidgets_CONFIG_EXECUTABLE:STRING=${WX_CONFIG}
-GUI_USE=		WX=3.0
+GUI_USE=		WX=3.2
 
 .include <bsd.port.pre.mk>
 

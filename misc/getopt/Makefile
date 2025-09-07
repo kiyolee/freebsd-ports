@@ -13,6 +13,8 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		gmake pkgconfig shebangfix tar:xz
 
+GETOPT_ARCH!=	uname -p
+
 CONFIGURE_ARGS=	--disable-asciidoc \
 		--disable-all-programs \
 		--disable-gtk-doc \
@@ -21,6 +23,9 @@ CONFIGURE_ARGS=	--disable-asciidoc \
 		--disable-makeinstall-setuid \
 		--disable-year2038 \
 		--with-pkgconfigdir=${PREFIX}/libdata/pkgconfig
+.if ${GETOPT_ARCH} == i386
+CONFIGURE_ARGS+=--disable-year2038
+.endif
 GNU_CONFIGURE=	yes
 
 SHEBANG_FILES=	misc-utils/getopt-example.bash

@@ -28,7 +28,7 @@ TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}build>0:devel/py-build@${PY_FLAVOR} \
 		git:devel/git
 
 USES=		python
-USE_PYTHON=	autoplist cython_test concurrent pep517 pytest
+USE_PYTHON=	autoplist cython3_test concurrent pep517 pytest
 
 NO_ARCH=	yes
 

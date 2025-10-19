@@ -1,11 +1,13 @@
---- pyproject.toml.orig 2025-06-24 22:40:55 UTC
-+++ pyproject.toml
-@@ -2,7 +2,7 @@ requires = [
+--- pyproject.toml.orig	2024-02-06 08:17:48.000000000 +1100
++++ pyproject.toml	2025-10-18 19:33:46.702048000 +1100
+@@ -1,8 +1,8 @@
+ [build-system]
  build-backend = "mesonpy"
  requires = [
-     "Cython>=0.29.34,<3.1",
+-    "Cython>=0.29.34,<3.1",
 -    "meson-python>=0.15.0,<0.16.0",
++    "Cython>=0.29.34",
 +    "meson-python>=0.15.0",
  ]
-
+ 
  [project]

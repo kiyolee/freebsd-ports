@@ -1,0 +1,9 @@
+--- pyproject.toml.setuppy.orig	2025-10-18 19:33:22.876448000 +1100
++++ pyproject.toml.setuppy	2025-10-18 19:33:57.913449000 +1100
+@@ -9,5 +9,5 @@
+ requires = [
+     "setuptools==59.2.0",
+     "wheel==0.38.1",
+-    "Cython>=0.29.34,<3.1",
++    "Cython>=0.29.34",
+ ]

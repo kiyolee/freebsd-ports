@@ -7,7 +7,7 @@
 -                isinstance(a.value, ast.Str)):
 -            version = a.value.s
 +                isinstance(a.value, ast.Constant)):
-+            version = a.value
++            version = a.value.value
  
  setup(name='html5lib',
        version=version,

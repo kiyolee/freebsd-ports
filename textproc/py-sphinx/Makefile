@@ -1,7 +1,5 @@
 PORTNAME=	sphinx
-PORTVERSION=	5.3.0
-PORTREVISION=	3
-PORTEPOCH=	1
+PORTVERSION=	6.2.0
 CATEGORIES=	textproc python
 MASTER_SITES=	PYPI
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -37,7 +35,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sphinxcontrib-applehelp>=0:textproc/py-sphin
 		${LOCALBASE}/share/certs/ca-root-nss.crt:security/ca_root_nss
 TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}html5lib>=0:www/py-html5lib@${PY_FLAVOR}
 
-USES=		python:3.10-3.12 # uses imghdr module
+USES=		python
 USE_PYTHON=	autoplist concurrent cython_test pep517 pytest
 
 NO_ARCH=	yes

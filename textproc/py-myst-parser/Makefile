@@ -19,7 +19,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}docutils>=0.20,1<0.23,1:textproc/py-docutils
 		${PYTHON_PKGNAMEPREFIX}markdown-it-py>=4.0<5:textproc/py-markdown-it-py@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}mdit-py-plugins>=0.5<1:textproc/py-mdit-py-plugins@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pyyaml>=0:devel/py-pyyaml@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}sphinx>=5,1<10,1:textproc/py-sphinx@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}sphinx>=6.2:textproc/py-sphinx@${PY_FLAVOR}
 
 USES=		python:3.11+
 USE_PYTHON=	autoplist concurrent pep517

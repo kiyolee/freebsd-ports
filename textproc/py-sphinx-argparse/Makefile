@@ -12,7 +12,7 @@ WWW=		https://github.com/ashb/sphinx-argparse
 LICENSE=	MIT
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}flit-core>0:devel/py-flit-core@${PY_FLAVOR}
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sphinx>=1.2.0,1:textproc/py-sphinx@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sphinx>=6.2:textproc/py-sphinx@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist pep517

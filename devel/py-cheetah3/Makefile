@@ -21,7 +21,7 @@ USES=		python
 USE_GITHUB=	yes
 GH_ACCOUNT=	CheetahTemplate3
 GH_PROJECT=	cheetah3
-USE_PYTHON=	autoplist concurrent pep517 pytest
+USE_PYTHON=	allflavors autoplist concurrent pep517 pytest
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PYTHON_SITELIBDIR}/Cheetah/*.so

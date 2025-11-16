@@ -18,7 +18,7 @@ BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools>=61<84.1:devel/py-setuptools@${
 		${PYTHON_PKGNAMEPREFIX}wheel>=0:devel/py-wheel@${PY_FLAVOR}
 
 USES=		python
-USE_PYTHON=	autoplist concurrent cython pep517
+USE_PYTHON=	allflavors autoplist concurrent cython pep517
 
 MAKE_ENV=	CHARSET_NORMALIZER_CYTHON_ABI3=0 \
 		CHARSET_NORMALIZER_USE_CYTHON=1

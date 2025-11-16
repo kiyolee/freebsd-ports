@@ -30,7 +30,7 @@ TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}brotli>=1.0.9:archivers/py-brotli@${PY_FLAV
 		${PYTHON_PKGNAMEPREFIX}zstandard>=0.18.0:archivers/py-zstandard@${PY_FLAVOR}
 
 USES=		cpe python
-USE_PYTHON=	autoplist concurrent cryptography_test pep517 pytest
+USE_PYTHON=	allflavors autoplist concurrent cryptography_test pep517 pytest
 
 NO_ARCH=	yes
 PYTEST_IGNORED_TESTS=	test_ssl_read_timeout

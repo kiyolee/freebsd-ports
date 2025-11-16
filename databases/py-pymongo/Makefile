@@ -17,7 +17,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dnspython>=2.6.1:dns/py-dnspython@${PY_FLAVO
 
 USES=		cpe python
 CPE_VENDOR=	mongodb
-USE_PYTHON=	autoplist concurrent pep517
+USE_PYTHON=	allflavors autoplist concurrent pep517
 
 CONFLICTS_INSTALL=	py[0-9][0-9]-pymongo28
 

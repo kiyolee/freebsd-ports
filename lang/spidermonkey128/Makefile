@@ -21,7 +21,7 @@ LIB_DEPENDS=	libicudata.so:devel/icu \
 		libnspr4.so:devel/nspr
 
 USES=		compiler:c++17-lang gmake llvm:noexport localbase pathfix pkgconfig \
-		python:build tar:xz
+		python:3.13,build tar:xz
 USE_LDCONFIG=	yes
 SP_VER=		128
 HAS_CONFIGURE=	yes

@@ -15,7 +15,7 @@ BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools>=61.0.0:devel/py-setuptools@${P
 		${PYTHON_PKGNAMEPREFIX}wheel>=0:devel/py-wheel@${PY_FLAVOR}
 
 USES=		cpe python
-USE_PYTHON=	autoplist concurrent pep517 unittest
+USE_PYTHON=	allflavors autoplist concurrent pep517 unittest
 
 NO_ARCH=	yes
 TEST_ARGS=	discover -s tests

@@ -30,7 +30,7 @@ TEST_DEPENDS=	${PY_BACKPORTS.ZSTD} \
 		${PYTHON_PKGNAMEPREFIX}trustme>=1.2.1:security/py-trustme@${PY_FLAVOR}
 
 USES=		cpe python
-USE_PYTHON=	autoplist concurrent cryptography_test pep517 pytest
+USE_PYTHON=	allflavors autoplist concurrent cryptography_test pep517 pytest
 
 NO_ARCH=	yes
 PYTEST_IGNORED_TESTS=	test_ssl_read_timeout

@@ -12,7 +12,7 @@ WWW=		https://github.com/mongodb/mongo-python-driver
 LICENSE=	APACHE20
 
 USES=		python
-USE_PYTHON=	autoplist concurrent distutils
+USE_PYTHON=	allflavors autoplist concurrent distutils
 
 CONFLICTS_INSTALL=	py[0-9][0-9]-pymongo28
 

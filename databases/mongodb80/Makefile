@@ -44,7 +44,7 @@ FLAVORS=	default armv80a
 
 armv80a_PKGNAMESUFFIX=	${DISTVERSION:R:S/.//}-armv80a
 
-USES=		compiler:c++20-lang cpe python:build scons shebangfix ssl
+USES=		compiler:c++20-lang cpe python:3.13,build scons shebangfix ssl
 # gmake is used while running ${WRKSRC}/src/third_party/mozjs/gen-config.sh
 USES+=		gmake pkgconfig
 CPE_PRODUCT=	mongodb

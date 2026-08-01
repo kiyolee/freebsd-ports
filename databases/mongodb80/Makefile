@@ -53,7 +53,7 @@ FLAVORS=	default armv80a
 armv80a_PKGNAMESUFFIX=	${DISTVERSION:R:S/.//}-armv80a
 
 # gmake is used while running ${WRKSRC}/src/third_party/mozjs/scripts/gen-config.sh
-USES=		compiler:c++20-lang cpe gmake pkgconfig python:build shebangfix ssl
+USES=		compiler:c++20-lang cpe gmake pkgconfig python:3.13,build shebangfix ssl
 CPE_PRODUCT=	mongodb
 
 # mozjs tag comes from ${WRKSRC}/src/third_party/mozjs/scripts/import.sh

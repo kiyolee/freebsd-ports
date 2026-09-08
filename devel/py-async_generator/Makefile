@@ -15,7 +15,7 @@ LICENSE_FILE_MIT=	${WRKSRC}/LICENSE.MIT
 LICENSE_FILE_APACHE20=	${WRKSRC}/LICENSE.APACHE2
 
 USES=		python
-USE_PYTHON=	autoplist distutils pytest
+USE_PYTHON=	allflavors autoplist distutils pytest
 NO_ARCH=	yes
 
 .include <bsd.port.mk>

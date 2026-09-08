@@ -19,7 +19,7 @@ BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}hatch-fancy-pypi-readme>=0:devel/py-hatch-
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}attrs>=19.1.0:devel/py-attrs@${PY_FLAVOR}
 
 USES=		python
-USE_PYTHON=	autoplist concurrent cryptography pep517
+USE_PYTHON=	allflavors autoplist concurrent cryptography pep517
 
 NO_ARCH=	yes
 

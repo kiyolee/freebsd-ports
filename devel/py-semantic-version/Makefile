@@ -18,7 +18,7 @@ BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools>=0:devel/py-setuptools@${PY_FLA
 TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django52>=1.1:www/py-django52@${PY_FLAVOR}
 
 USES=		python
-USE_PYTHON=	autoplist concurrent nose2 pep517
+USE_PYTHON=	allflavors autoplist concurrent nose2 pep517
 
 NO_ARCH=	yes
 

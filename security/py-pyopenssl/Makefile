@@ -19,7 +19,7 @@ TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pretend>=0:devel/py-pretend@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pytest-rerunfailures>=0:devel/py-pytest-rerunfailures@${PY_FLAVOR}
 
 USES=		cpe python
-USE_PYTHON=	autoplist concurrent cryptography pep517 pytest
+USE_PYTHON=	allflavors autoplist concurrent cryptography pep517 pytest
 
 NO_ARCH=	yes
 # test_connect_refused: Avoid stalling in build environments that don't have an internet connection

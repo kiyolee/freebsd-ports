@@ -34,7 +34,7 @@ TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}astor>=0:devel/py-astor@${PY_FLAVOR} \
 		pylint${PYTHON_PKGNAMESUFFIX}>=0:devel/pylint@${PY_FLAVOR}
 
 USES=		python
-USE_PYTHON=	autoplist pep517
+USE_PYTHON=	allflavors autoplist pep517
 
 TEST_ENV=	PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 \
 		PYTHONPATH=${WRKSRC}/src

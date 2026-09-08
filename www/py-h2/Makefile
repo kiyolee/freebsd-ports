@@ -17,7 +17,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}hpack>=4.2<5:www/py-hpack@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}hyperframe>=6.1<7:www/py-hyperframe@${PY_FLAVOR}
 
 USES?=		python
-USE_PYTHON=	autoplist concurrent pep517
+USE_PYTHON=	allflavors autoplist concurrent pep517
 
 NO_ARCH=	yes
 

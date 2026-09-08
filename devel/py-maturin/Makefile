@@ -24,7 +24,7 @@ LIB_DEPENDS=	libzstd.so:archivers/zstd
 RUN_DEPENDS=	${PY_TOMLI}
 
 USES=		cargo python
-USE_PYTHON=	autoplist concurrent pep517
+USE_PYTHON=	allflavors autoplist concurrent pep517
 
 CARGO_BUILD=	no
 CARGO_INSTALL=	no

@@ -31,7 +31,7 @@ TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}bcrypt>=3.1.5:security/py-bcrypt@${PY_FLAVO
 		${PYTHON_PKGNAMEPREFIX}sqlite3>=0:databases/py-sqlite3@${PY_FLAVOR}
 
 USES=		cargo cpe python ssl
-USE_PYTHON=	autoplist concurrent pep517 pytest
+USE_PYTHON=	allflavors autoplist concurrent pep517 pytest
 
 CARGO_BUILD=	no
 CARGO_CARGOTOML=${WRKSRC}/src/rust/Cargo.toml

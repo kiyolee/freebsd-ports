@@ -19,7 +19,7 @@ RUN_DEPENDS=	${PY_EXCEPTIONGROUP} \
 		${PYTHON_PKGNAMEPREFIX}truststore>=0.9.1:security/py-truststore@${PY_FLAVOR}
 
 USES=		python
-USE_PYTHON=	autoplist concurrent pep517
+USE_PYTHON=	allflavors autoplist concurrent pep517
 
 NO_ARCH=	yes
 

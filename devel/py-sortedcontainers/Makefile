@@ -14,6 +14,6 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 NO_ARCH=	yes
 USES=		python
-USE_PYTHON=	distutils autoplist
+USE_PYTHON=	allflavors distutils autoplist
 
 .include <bsd.port.mk>

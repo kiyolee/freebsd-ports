@@ -20,7 +20,7 @@ TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest-asyncio>=0:devel/py-pytest-asyncio@$
 		${PYTHON_PKGNAMEPREFIX}async_generator>=0:devel/py-async_generator@${PY_FLAVOR}
 
 USES=		python
-USE_PYTHON=	autoplist distutils pytest
+USE_PYTHON=	allflavors autoplist distutils pytest
 NO_ARCH=	yes
 
 .include <bsd.port.mk>

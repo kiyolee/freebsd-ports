@@ -1,0 +1,39 @@
+--- src/libs/xpcom18a4/python/Makefile.kmk.orig	2026-09-22 18:19:42.000000000 +1000
++++ src/libs/xpcom18a4/python/Makefile.kmk	2026-10-21 04:06:26.253972000 +1100
+@@ -700,6 +700,27 @@
+    endif
+   endif
+ 
++  ifdef VBOX_PYTHON315_INC
++   #
++   # Python 3.15 version (implicitly with pymalloc)
++   #
++   DLLS += VBoxPython3_15
++   VBoxPython3_15_EXTENDS = VBoxPythonBase
++   VBoxPython3_15_EXTENDS_BY = appending
++   VBoxPython3_15_INCS    = $(VBOX_PYTHON315_INC)
++   VBoxPython3_15_LIBS    = $(VBOX_PYTHON315_LIB)
++
++   ifdef VBOX_WITH_32_ON_64_MAIN_API
++    ifdef VBOX_PYTHON315_LIB_X86
++     DLLS += VBoxPython3_15_x86
++     VBoxPython3_15_x86_EXTENDS = VBoxPythonBase_x86
++     VBoxPython3_15_x86_EXTENDS_BY = appending
++     VBoxPython3_15_x86_INCS  = $(VBOX_PYTHON315_INC)
++     VBoxPython3_15_x86_LIBS  = $(VBOX_PYTHON315_LIB_X86)
++    endif
++   endif
++  endif
++
+   ifdef VBOX_PYTHONDEF_INC
+    #
+    # Python without versioning
+@@ -742,7 +763,7 @@
+   # TODO: ASSUMING that we don't need a different headers for pymalloc
+   #       ('m' builds < 3.8) and CRT malloc.
+   #
+-  VBOX_PYTHON_LIMITED_API_VER := $(firstword $(foreach ver, 35 36 37 38 39 310 311 312 313 314   34 33 \
++  VBOX_PYTHON_LIMITED_API_VER := $(firstword $(foreach ver, 35 36 37 38 39 310 311 312 313 314 315 34 33 \
+   			,$(if-expr defined(VBOX_PYTHON$(ver)_INC),$(ver),)$(if-expr defined(VBOX_PYTHON$(ver)M_INC),$(ver)M,)))
+   ifneq ($(VBOX_PYTHON_LIMITED_API_VER),)
+    DLLS += VBoxPython3

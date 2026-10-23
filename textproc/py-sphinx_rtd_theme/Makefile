@@ -12,7 +12,7 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		python
-USE_PYTHON=	autoplist distutils pytest
+USE_PYTHON=	allflavors autoplist distutils pytest
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sphinx>=6,1<10,1:textproc/py-sphinx@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}docutils>=0.18,1<0.23,1:textproc/py-docutils@${PY_FLAVOR} \

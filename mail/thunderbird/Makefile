@@ -32,7 +32,7 @@ CONFLICTS_INSTALL=	thunderbird-esr
 USE_MOZILLA=	-icu -sqlite
 CFLAGS_powerpc64le=	-DSQLITE_BYTEORDER=1234
 
-USES=		tar:xz
+USES=		tar:xz python:3.14,build
 # helpful when testing beta
 WRKSRC=		${WRKDIR}/${PORTNAME}-${DISTVERSION}
 

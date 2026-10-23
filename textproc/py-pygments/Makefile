@@ -18,7 +18,7 @@ TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest-cov>=4.1.0:devel/py-pytest-cov@${PY_
 		${PYTHON_PKGNAMEPREFIX}wcag-contrast-ratio>=0.9:www/py-wcag-contrast-ratio@${PY_FLAVOR}
 
 USES=		cpe python tex
-USE_PYTHON=	autoplist concurrent pep517 pytest
+USE_PYTHON=	allflavors autoplist concurrent pep517 pytest
 USE_TEX=	latex:test
 
 # We don't want to use Pytest plugins, for example devel/py-ruff, if available in the system

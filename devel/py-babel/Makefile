@@ -16,7 +16,7 @@ TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}freezegun>0:devel/py-freezegun@${PY_FLAVOR}
 
 USES=		cpe python
 CPE_VENDOR=	pocoo
-USE_PYTHON=	autoplist concurrent distutils pytest
+USE_PYTHON=	allflavors autoplist concurrent distutils pytest
 
 NO_ARCH=	yes
 PORTDOCS=	docs/*

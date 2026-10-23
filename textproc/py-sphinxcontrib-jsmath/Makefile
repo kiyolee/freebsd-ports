@@ -14,7 +14,7 @@ LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		python
-USE_PYTHON=	autoplist distutils concurrent
+USE_PYTHON=	allflavors autoplist distutils concurrent
 NO_ARCH=	yes
 
 .include <bsd.port.mk>

@@ -17,7 +17,7 @@ BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools>=18.0:devel/py-setuptools@${PY_
 LIB_DEPENDS=	libstemmer.so:textproc/snowballstemmer
 
 USES=		python
-USE_PYTHON=	autoplist cython pep517 pytest
+USE_PYTHON=	allflavors autoplist cython pep517 pytest
 CONFIGURE_ENV+=	PYSTEMMER_SYSTEM_LIBSTEMMER=1
 MAKE_ENV+=	PYSTEMMER_SYSTEM_LIBSTEMMER=1
 CFLAGS+=	-I${LOCALBASE}/include

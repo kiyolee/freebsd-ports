@@ -21,7 +21,7 @@ TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}markupsafe>=2.0.0:textproc/py-markupsafe@${
 USES=		cpe python
 CPE_VENDOR=	palletsprojects
 CPE_PRODUCT=	jinja
-USE_PYTHON=	autoplist pep517 pytest # 23 tests fail, see https://github.com/pallets/jinja/issues/1757
+USE_PYTHON=	allflavors autoplist pep517 pytest # 23 tests fail, see https://github.com/pallets/jinja/issues/1757
 PEP517_INSTALL_CMD=	${PYTHON_CMD} -m installer --destdir ${STAGEDIR} \
 			--prefix ${PREFIX} \
 			${BUILD_WRKSRC}/dist/${PYWHEEL_NAME}-${DISTVERSION}*.whl

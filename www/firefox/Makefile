@@ -29,7 +29,7 @@ USE_GECKO=	gecko
 CONFLICTS_INSTALL=	firefox-esr
 USE_MOZILLA=	-sqlite
 
-USES=		tar:xz
+USES=		tar:xz python:3.14,build
 # helpful when testing beta
 WRKSRC=		${WRKDIR}/${PORTNAME}-${DISTVERSION}
 

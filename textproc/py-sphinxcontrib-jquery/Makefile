@@ -15,7 +15,7 @@ BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}flit-core>=3.7:devel/py-flit-core@${PY_FLA
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sphinx>=1.8:textproc/py-sphinx@${PY_FLAVOR}
 
 USES=		pytest python
-USE_PYTHON=	autoplist pep517
+USE_PYTHON=	allflavors autoplist pep517
 
 NO_ARCH=	yes
 

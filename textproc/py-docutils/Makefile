@@ -15,7 +15,7 @@ LICENSE_COMB=	multi
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}flit-core>=3.11<4:devel/py-flit-core@${PY_FLAVOR}
 
 USES=		python shebangfix
-USE_PYTHON=	autoplist concurrent pep517
+USE_PYTHON=	allflavors autoplist concurrent pep517
 
 SHEBANG_FILES=	docutils/writers/odf_odt/prepstyles.py \
 		docutils/__main__.py \

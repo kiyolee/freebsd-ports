@@ -43,7 +43,7 @@ TEST_DEPENDS=	graphviz>=0:graphics/graphviz \
 		${PYTHON_PKGNAMEPREFIX}typing-extensions>=4.9:devel/py-typing-extensions@${PY_FLAVOR}
 
 USES=		magick:test python:3.11+
-USE_PYTHON=	autoplist concurrent pep517 pytest
+USE_PYTHON=	allflavors autoplist concurrent pep517 pytest
 
 NO_ARCH=	yes
 PYTEST_BROKEN_TESTS=	test_copy_images

@@ -16,7 +16,7 @@ BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}poetry-core>=1.0.0:devel/py-poetry-core@${
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}packaging>=20.9:devel/py-packaging@${PY_FLAVOR}
 
 USES=		python
-USE_PYTHON=	autoplist concurrent pep517
+USE_PYTHON=	allflavors autoplist concurrent pep517
 
 NO_ARCH=	yes
 

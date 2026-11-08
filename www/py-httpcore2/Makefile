@@ -18,7 +18,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}h11>=0.16:net/py-h11@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}truststore>=0.10:security/py-truststore@${PY_FLAVOR}
 
 USES=		python
-USE_PYTHON=	autoplist concurrent pep517
+USE_PYTHON=	allflavors autoplist concurrent pep517
 
 NO_ARCH=	yes
 

@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}poetry-core>=2.0:devel/py-poetry-core@${PY_FLAVOR}
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}build>=1.2.1<2.0.0:devel/py-build@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}cachecontrol>=0.14.0<0.15.0:www/py-cachecontrol@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}cachecontrol>=0.14.0:www/py-cachecontrol@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}cleo>=2.1.0<3.0.0:devel/py-cleo@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}dulwich>=0.25.0<2:devel/py-dulwich@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}fastjsonschema>=2.18.0<3.0.0:devel/py-fastjsonschema@${PY_FLAVOR} \
